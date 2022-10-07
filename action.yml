@@ -1,0 +1,15 @@
+name: 'Thank you Actions'
+description: 'Say thank you to new pull reequest'
+author: 'Rutvik Lhase'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  TENOR_TOKEN:
+    description: 'TENOR API TOKEN'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
